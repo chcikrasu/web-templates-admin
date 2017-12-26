@@ -153,8 +153,8 @@
             <!-- Content Header (Page header) -->
             <section class="content-header">
                 <h1>
-                    Salony
-                    <small>přehled</small>
+                    Salon Swan
+                    <small>profil</small>
                 </h1>
                 <ol class="breadcrumb">
                     <li>
@@ -166,45 +166,162 @@
             </section>
             <section class="content">
                 <div class="row">
-                    <div class="col-md-5">
-                        <div class="nav-tabs-custom">
-                            <!-- Tabs within a box -->
-                            <ul class="nav nav-tabs pull-right">
-                                <!-- <li class="active">
-                                    <a href="#revenue-chart" data-toggle="tab">Area</a>
-                                </li>
-                                <li>
-                                    <a href="#sales-chart" data-toggle="tab">Donut</a>
-                                </li> -->
-                                <li class="pull-left header">
-                                    <i class="fa fa-scissors"></i> Seznam salonů
-                                </li>
-                                <li class="pull-right header">
-                                    <button class="add-newsalon">
-                                        <i class="fa fa-plus-circle" title="Přidat nový salon"></i>
-                                    </button>
-                                </li>
-                            </ul>
-                            <div class="tab-content no-padding">
-                                <div class="box-footer no-padding">
-                                    <ul class="nav nav-pills nav-stacked">
-                                        <li>
-                                            <a href="salon.html">Salon Swan
-                                                <span class="pull-right text-red right-icons">
-                                                    <i class="fa fa-trash-o"></i>
-                                                </span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="salon.html">Kadeřictvi Ivona
-                                                <span class="pull-right text-red right-icons">
-                                                    <i class="fa fa-trash-o"></i>
-                                                </span>
-                                            </a>
-                                        </li>
-                                    </ul>
+                    <div class="col-md-12">
+                        <div class="box box-primary">
+                            <div class="box-header with-border">
+                                <h3 class="box-title">Obecné udaje</h3>
+                            </div>
+                            <!-- /.box-header -->
+                            <!-- form start -->
+                            <form role="form">
+                                <div class="box-body">
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Název</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1" value="Salon Swan">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputPassword1">Popis</label>
+                                        <textarea class="form-control" id="exampleInputPassword1">
+                                                Lorem Ipsum je demonstrativní výplňový text používaný v tiskařském a knihařském průmyslu. Lorem Ipsum je považováno za standard v této oblasti už od začátku 16. století, kdy dnes neznámý tiskař vzal kusy textu a na jejich základě vytvořil speciální vzorovou knihu. Jeho odkaz nevydržel pouze pět století, on přežil i nástup elektronické sazby v podstatě beze změny.
+                                                 Nejvíce popularizováno bylo Lorem Ipsum v šedesátých letech 20. století, kdy byly vydávány speciální vzorníky s jeho pasáže
+                                        </textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputPassword1">Adresa</label>
+                                        <input type="text" class="form-control" id="exampleInputPassword1" value="Vinoradska 15">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputFile">Foto</label>
+                                        <input type="file" id="exampleInputFile">
+
+                                        <p class="help-block">Nahrajte foto salonu. Maximalně 4</p>
+                                    </div>
+                                </div>
+                                <!-- /.box-body -->
+
+                                <div class="box-footer">
+                                    <button type="submit" class="btn btn-primary">Uložit změny</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="box box-success">
+                            <div class="box-header with-border">
+                                <h3 class="box-title">Servisy</h3>
+                            </div>
+
+                            <div class="box-body">
+                                <div class="form-group">
+                                    <label>Přidat servis</label>
+                                    <select class="form-control">
+                                        <option>option 1</option>
+                                        <option>option 2</option>
+                                        <option>option 3</option>
+                                        <option>option 4</option>
+                                        <option>option 5</option>
+                                    </select>
+                                </div>
+                                <div class="tab-content no-padding">
+                                    <div id="accordion" role="tablist">
+                                        <div class="card">
+                                            <div class="card-header" role="tab" id="headingOne">
+                                                <h5 class="mb-0">
+                                                    <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                        Collapsible Group Item #1
+                                                    </a>
+                                                </h5>
+                                            </div>
+
+                                            <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+                                                <div class="card-body">
+                                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                                                    non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
+                                                    eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                                                    single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
+                                                    helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                                                    Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
+                                                    raw denim aesthetic synth nesciunt you probably haven't heard of them
+                                                    accusamus labore sustainable VHS.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header" role="tab" id="headingTwo">
+                                                <h5 class="mb-0">
+                                                    <a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                        Collapsible Group Item #2
+                                                    </a>
+                                                </h5>
+                                            </div>
+                                            <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
+                                                <div class="card-body">
+                                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                                                    non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
+                                                    eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                                                    single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
+                                                    helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                                                    Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
+                                                    raw denim aesthetic synth nesciunt you probably haven't heard of them
+                                                    accusamus labore sustainable VHS.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header" role="tab" id="headingThree">
+                                                <h5 class="mb-0">
+                                                    <a class="collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                        Collapsible Group Item #3
+                                                    </a>
+                                                </h5>
+                                            </div>
+                                            <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
+                                                <div class="card-body">
+                                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                                                    non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
+                                                    eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                                                    single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
+                                                    helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                                                    Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
+                                                    raw denim aesthetic synth nesciunt you probably haven't heard of them
+                                                    accusamus labore sustainable VHS.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+
+                            <!-- /.box-body -->
+                        </div>
+                        <div class="box box-warning">
+                            <div class="box-header with-border">
+                                <h3 class="box-title">Zaměstnanci </h3>
+                                <button class="add-newsalon">
+                                    <i class="fa fa-plus-circle" title="Přidat noveho zaměstnance"></i>
+                                </button>
+                            </div>
+                            <div class="box-body">
+                                <div class="tab-content no-padding">
+                                    <div class="box-footer no-padding">
+                                        <ul class="nav nav-pills nav-stacked">
+                                            <li>
+                                                <a href="#">Ivana Ivanova
+                                                    <span class="pull-right text-red right-icons">
+                                                        <i class="fa fa-trash-o"></i>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Katerina Alexandrova
+                                                    <span class="pull-right text-red right-icons">
+                                                        <i class="fa fa-trash-o"></i>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.box-body -->
                         </div>
                     </div>
 
