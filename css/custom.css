@@ -8,3 +8,19 @@
 {
     margin-right: 2%;
 }
+
+.box-working-hours
+{
+    border-top-color: #a60088;
+}
+
+.working-hour-btn
+{
+    margin: 2%;
+}
+
+.working-hours-day-container
+{
+    margin-left: 1%;
+    /*float: right;*/
+}

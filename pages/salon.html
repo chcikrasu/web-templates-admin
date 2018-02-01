@@ -166,14 +166,14 @@
             </section>
             <section class="content">
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-12" id="salon-accordion">
                         <div class="box box-primary">
-                            <div class="box-header with-border">
-                                <h3 class="box-title">Obecné udaje</h3>
-                            </div>
-                            <!-- /.box-header -->
-                            <!-- form start -->
-                            <form role="form">
+                            <a data-toggle="collapse" data-parent="#salon-accordion" href="#collapseOne" aria-expanded="false" class="collapsed">
+                                <div class="box-header with-border">
+                                    <h3 class="box-title">Obecné udaje</h3>
+                                </div>
+                            </a>
+                            <form role="form" id="collapseOne" class="collapse" aria-expanded="false">
                                 <div class="box-body">
                                     <div class="form-group">
                                         <label for="exampleInputEmail1">Název</label>
@@ -204,12 +204,47 @@
                                 </div>
                             </form>
                         </div>
-                        <div class="box box-success">
-                            <div class="box-header with-border">
-                                <h3 class="box-title">Servisy</h3>
+                        <div class="box box-warning" id="workers">
+                            <a data-toggle="collapse" data-parent="#salon-accordion" href="#collapseThree" aria-expanded="false" class="collapsed">
+                                <div class="box-header with-border">
+                                    <h3 class="box-title">Zaměstnanci </h3>
+                                    <button class="add-newsalon">
+                                        <i class="fa fa-plus-circle fa-lg" title="Přidat noveho zaměstnance"></i>
+                                    </button>
+                                </div>
+                            </a>
+                            <div class="collapse box-body" id="collapseThree" aria-expanded="false">
+                                <div class="tab-content no-padding">
+                                    <div class="box-footer no-padding">
+                                        <ul class="nav nav-pills nav-stacked">
+                                            <li>
+                                                <a href="worker.html">Ivana Ivanova
+                                                    <span class="pull-right text-red right-icons">
+                                                        <i class="fa fa-trash-o"></i>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="worker.html">Katerina Alexandrova
+                                                    <span class="pull-right text-red right-icons">
+                                                        <i class="fa fa-trash-o"></i>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
+                            <!-- /.box-body -->
+                        </div>
+                        <div class="box box-success">
+                            <a data-toggle="collapse" data-parent="#salon-accordion" href="#collapseTwo" aria-expanded="false" class="collapsed">
+                                <div class="box-header with-border">
+                                    <h3 class="box-title">Servisy</h3>
+                                </div>
+                            </a>
 
-                            <div class="box-body">
+                            <div class="collapse box-body" id="collapseTwo" aria-expanded="false">
                                 <div class="form-group">
                                     <label>Přidat servis</label>
                                     <select class="form-control">
@@ -289,40 +324,778 @@
                                     </div>
                                 </div>
                             </div>
+                            <!-- Pracovní doba -->
 
                             <!-- /.box-body -->
                         </div>
-                        <div class="box box-warning">
-                            <div class="box-header with-border">
-                                <h3 class="box-title">Zaměstnanci </h3>
-                                <button class="add-newsalon">
-                                    <i class="fa fa-plus-circle" title="Přidat noveho zaměstnance"></i>
-                                </button>
-                            </div>
-                            <div class="box-body">
-                                <div class="tab-content no-padding">
-                                    <div class="box-footer no-padding">
-                                        <ul class="nav nav-pills nav-stacked">
-                                            <li>
-                                                <a href="worker.html">Ivana Ivanova
-                                                    <span class="pull-right text-red right-icons">
-                                                        <i class="fa fa-trash-o"></i>
-                                                    </span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="worker.html">Katerina Alexandrova
-                                                    <span class="pull-right text-red right-icons">
-                                                        <i class="fa fa-trash-o"></i>
-                                                    </span>
-                                                </a>
-                                            </li>
-                                        </ul>
+
+                        <div class="box box-working-hours">
+                            <a data-toggle="collapse" data-parent="#salon-accordion" href="#collapseFour" aria-expanded="false" class="collapsed">
+                                <div class="box-header with-border">
+                                    <h3 class="box-title">Pracovní doba</h3>
+                                </div>
+                            </a>
+                            <div class="collapse box-body" id="collapseFour" aria-expanded="false">
+                                <div class="working-hours-day-container col-md-1">
+                                    <div class="box-header with-border">
+                                        Pondělí
                                     </div>
+                                    <div class="row">
+                                        <button type="button" class="working-hour-btn btn btn-block btn-default">06:00</button>
+                                    </div>
+                                    <div class="row">
+                                        <button type="button" class="working-hour-btn btn btn-block btn-default">06:30</button>
+                                    </div>
+                                    <div class="row">
+                                        <button type="button" class="working-hour-btn btn btn-block btn-default">07:00</button>
+                                    </div>
+                                    <div class="row">
+                                        <button type="button" class="working-hour-btn btn btn-block btn-success">07:30</button>
+                                    </div>
+                                    <div class="row">
+                                        <button type="button" class="working-hour-btn btn btn-block btn-success">08:00</button>
+                                    </div>
+                                    <div class="row">
+                                        <button type="button" class="working-hour-btn btn btn-block btn-success">08:30</button>
+                                    </div>
+                                    <div class="row">
+                                        <button type="button" class="working-hour-btn btn btn-block btn-success">09:00</button>
+                                    </div>
+                                    <div class="row">
+                                        <button type="button" class="working-hour-btn btn btn-block btn-success">09:30</button>
+                                    </div>
+                                    <div class="row">
+                                        <button type="button" class="working-hour-btn btn btn-block btn-success">10:00</button>
+                                    </div>
+                                    <div class="row">
+                                        <button type="button" class="working-hour-btn btn btn-block btn-success">10:30</button>
+                                    </div>
+                                    <div class="row">
+                                        <button type="button" class="working-hour-btn btn btn-block btn-success">11:00</button>
+                                    </div>
+                                    <div class="row">
+                                        <button type="button" class="working-hour-btn btn btn-block btn-success">11:30</button>
+                                    </div>
+                                    <div class="row">
+                                        <button type="button" class="working-hour-btn btn btn-block btn-success">12:00</button>
+                                    </div>
+                                    <div class="row">
+                                        <button type="button" class="working-hour-btn btn btn-block btn-success">12:30</button>
+                                    </div>
+                                    <div class="row">
+                                        <button type="button" class="working-hour-btn btn btn-block btn-success">13:00</button>
+                                    </div>
+                                    <div class="row">
+                                        <button type="button" class="working-hour-btn btn btn-block btn-success">13:30</button>
+                                    </div>
+                                    <div class="row">
+                                        <button type="button" class="working-hour-btn btn btn-block btn-success">14:00</button>
+                                    </div>
+                                    <div class="row">
+                                        <button type="button" class="working-hour-btn btn btn-block btn-success">14:30</button>
+                                    </div>
+                                    <div class="row">
+                                        <button type="button" class="working-hour-btn btn btn-block btn-success">15:00</button>
+                                    </div>
+                                    <div class="row">
+                                        <button type="button" class="working-hour-btn btn btn-block btn-success">15:30</button>
+                                    </div>
+                                    <div class="row">
+                                        <button type="button" class="working-hour-btn btn btn-block btn-success">16:00</button>
+                                    </div>
+                                    <div class="row">
+                                        <button type="button" class="working-hour-btn btn btn-block btn-success">16:30</button>
+                                    </div>
+                                    <div class="row">
+                                        <button type="button" class="working-hour-btn btn btn-block btn-success">17:00</button>
+                                    </div>
+                                    <div class="row">
+                                        <button type="button" class="working-hour-btn btn btn-block btn-success">17:30</button>
+                                    </div>
+                                    <div class="row">
+                                        <button type="button" class="working-hour-btn btn btn-block btn-success">18:00</button>
+                                    </div>
+                                    <div class="row">
+                                        <button type="button" class="working-hour-btn btn btn-block btn-success">18:30</button>
+                                    </div>
+                                    <div class="row">
+                                        <button type="button" class="working-hour-btn btn btn-block btn-success">19:00</button>
+                                    </div>
+                                    <div class="row">
+                                        <button type="button" class="working-hour-btn btn btn-block btn-default">19:30</button>
+                                    </div>
+                                    <div class="row">
+                                        <button type="button" class="working-hour-btn btn btn-block btn-default">20:00</button>
+                                    </div>
+                                    <div class="row">
+                                        <button type="button" class="working-hour-btn btn btn-block btn-default">20:30</button>
+                                    </div>
+                                    <div class="row">
+                                        <button type="button" class="working-hour-btn btn btn-block btn-default">21:00</button>
+                                    </div>
+                                    <div class="row">
+                                        <button type="button" class="working-hour-btn btn btn-block btn-default">21:30</button>
+                                    </div>
+                                    <div class="row">
+                                        <button type="button" class="working-hour-btn btn btn-block btn-default">22:00</button>
+                                    </div>
+                                    <div class="row">
+                                        <button type="button" class="working-hour-btn btn btn-block btn-default">22:30</button>
+                                    </div>
+
+                                </div>
+                                <div class="working-hours-day-container col-md-1">
+                                    <div class="box-header with-border">
+                                        Úterý
+                                    </div>
+                                    <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-default">06:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-default">06:30</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-default">07:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">07:30</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">08:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">08:30</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">09:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">09:30</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">10:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">10:30</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">11:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">11:30</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">12:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">12:30</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">13:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">13:30</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">14:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">14:30</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">15:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">15:30</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">16:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">16:30</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">17:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">17:30</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">18:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">18:30</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">19:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-default">19:30</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-default">20:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-default">20:30</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-default">21:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-default">21:30</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-default">22:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-default">22:30</button>
+                                        </div>
+                                </div>
+                                <div class="working-hours-day-container col-md-1">
+                                    <div class="box-header with-border">
+                                        Středa
+                                    </div>
+                                    <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-default">06:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-default">06:30</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-default">07:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">07:30</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">08:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">08:30</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">09:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">09:30</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">10:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">10:30</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">11:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">11:30</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">12:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">12:30</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">13:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">13:30</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">14:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">14:30</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">15:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">15:30</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">16:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">16:30</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">17:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">17:30</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">18:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">18:30</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">19:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-default">19:30</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-default">20:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-default">20:30</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-default">21:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-default">21:30</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-default">22:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-default">22:30</button>
+                                        </div>
+                                </div>
+                                <div class="working-hours-day-container col-md-1">
+                                    <div class="box-header with-border">
+                                        Čtvrtek
+                                    </div>
+                                    <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-default">06:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-default">06:30</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-default">07:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">07:30</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">08:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">08:30</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">09:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">09:30</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">10:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">10:30</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">11:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">11:30</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">12:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">12:30</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">13:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">13:30</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">14:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">14:30</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">15:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">15:30</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">16:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">16:30</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">17:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">17:30</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">18:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">18:30</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">19:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-default">19:30</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-default">20:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-default">20:30</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-default">21:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-default">21:30</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-default">22:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-default">22:30</button>
+                                        </div>
+                                </div>
+                                <div class="working-hours-day-container col-md-1">
+                                    <div class="box-header with-border">
+                                        Pátek
+                                    </div>
+                                    <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-default">06:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-default">06:30</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-default">07:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">07:30</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">08:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">08:30</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">09:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">09:30</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">10:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">10:30</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">11:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">11:30</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">12:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">12:30</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">13:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">13:30</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">14:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">14:30</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">15:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">15:30</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">16:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">16:30</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">17:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">17:30</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">18:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">18:30</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">19:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-default">19:30</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-default">20:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-default">20:30</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-default">21:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-default">21:30</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-default">22:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-default">22:30</button>
+                                        </div>
+                                </div>
+                                <div class="working-hours-day-container col-md-1">
+                                    <div class="box-header with-border">
+                                        Sobota
+                                    </div>
+
+                                    <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-default">06:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-default">06:30</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-default">07:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">07:30</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">08:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">08:30</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">09:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">09:30</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">10:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">10:30</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">11:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">11:30</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">12:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">12:30</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">13:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">13:30</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">14:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">14:30</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">15:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">15:30</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">16:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">16:30</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">17:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">17:30</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">18:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">18:30</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">19:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-default">19:30</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-default">20:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-default">20:30</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-default">21:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-default">21:30</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-default">22:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-default">22:30</button>
+                                        </div>
+                                </div>
+                                <div class="working-hours-day-container col-md-1">
+                                    <div class="box-header with-border">
+                                        Neděle
+                                    </div>
+                                    <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-default">06:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-default">06:30</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-default">07:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">07:30</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">08:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">08:30</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">09:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">09:30</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">10:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">10:30</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">11:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">11:30</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">12:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">12:30</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">13:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">13:30</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">14:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">14:30</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">15:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">15:30</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">16:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">16:30</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">17:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">17:30</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">18:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">18:30</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-success">19:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-default">19:30</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-default">20:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-default">20:30</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-default">21:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-default">21:30</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-default">22:00</button>
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="working-hour-btn btn btn-block btn-default">22:30</button>
+                                        </div>
                                 </div>
                             </div>
+
+
+
                             <!-- /.box-body -->
                         </div>
+
+
+
                     </div>
 
                 </div>
