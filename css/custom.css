@@ -24,3 +24,8 @@
     margin-left: 1%;
     /*float: right;*/
 }
+
+.box-notifications
+{
+    border-top-color: #00a3a6;
+}
