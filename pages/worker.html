@@ -185,8 +185,18 @@
                                         <input type="text" class="form-control" id="name" value="Ivana Ivanova">
                                     </div>
                                     <div class="form-group">
+                                        <label for="position">Position</label>
+                                        <input type="text" class="form-control" id="position" value="Kadernice">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="file">Foto</label>
+                                        <input type="file" id="file">
+
+                                        <p class="help-block">Nahrajte foto specialisty</p>
+                                    </div>
+                                    <div class="form-group">
                                         <label>Servisy</label>
-                                        <select class="form-control" multiple="true"> 
+                                        <select class="form-control" multiple="true">
                                             <option>option 1</option>
                                             <option>option 2</option>
                                             <option>option 3</option>
@@ -194,6 +204,152 @@
                                             <option>option 5</option>
                                         </select>
                                     </div>
+                                    <div class="tab-content no-padding">
+                                        <div id="accordion" role="tablist">
+                                            <div class="card">
+                                                <div class="card-header" role="tab" id="headingOne">
+                                                    <h5 class="mb-0">
+                                                        <a data-toggle="collapse" href="#collapseHairDressing" aria-expanded="true" aria-controls="collapseHairDressing">
+                                                            Kadeřnictvi
+                                                        </a>
+                                                    </h5>
+                                                </div>
+
+                                                <div id="collapseHairDressing" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+                                                    <div class="card-body">
+                                                        <button type="button" class="btn btn-labeled btn-default">
+                                                            <span class="btn-label">
+                                                                <i class="glyphicon glyphicon-remove"></i>
+                                                            </span>
+                                                            <a href="#" data-toggle="modal" data-target="#modal-default">Damsky strih</a>
+
+                                                        </button>
+                                                        <button type="button" class="btn btn-labeled btn-default">
+                                                            <span class="btn-label">
+                                                                <i class="glyphicon glyphicon-remove"></i>
+                                                            </span>
+                                                            <a href="#" data-toggle="modal" data-target="#modal-default">Pansky strih</a>
+
+                                                        </button>
+                                                        <button type="button" class="btn btn-labeled btn-default">
+                                                            <span class="btn-label">
+                                                                <i class="glyphicon glyphicon-remove"></i>
+                                                            </span>
+                                                            <a href="#" data-toggle="modal" data-target="#modal-default">Detsky strih</a>
+
+                                                        </button>
+                                                        <button type="button" class="btn btn-labeled btn-default">
+                                                            <span class="btn-label">
+                                                                <i class="glyphicon glyphicon-remove"></i>
+                                                            </span>
+                                                            <a href="#" data-toggle="modal" data-target="#modal-default">Melir</a>
+
+                                                        </button>
+                                                        <button type="button" class="btn btn-labeled btn-default">
+                                                            <span class="btn-label">
+                                                                <i class="glyphicon glyphicon-remove"></i>
+                                                            </span>
+                                                            <a href="#" data-toggle="modal" data-target="#modal-default"> Keratinovy obal</a>
+
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <div class="card-header" role="tab" id="headingTwo">
+                                                    <h5 class="mb-0">
+                                                        <a data-toggle="collapse" href="#collapseMassaze" aria-expanded="true" aria-controls="collapseMassaze">
+                                                            Masaze
+                                                        </a>
+                                                    </h5>
+                                                </div>
+
+                                                <div id="collapseMassaze" class="collapse show" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
+                                                    <div class="card-body">
+                                                        <button type="button" class="btn btn-labeled btn-default">
+                                                            <span class="btn-label">
+                                                                <i class="glyphicon glyphicon-remove"></i>
+                                                            </span>
+                                                            <a href="#" data-toggle="modal" data-target="#modal-default">Thajska</a>
+
+                                                        </button>
+                                                        <button type="button" class="btn btn-labeled btn-default">
+                                                            <span class="btn-label">
+                                                                <i class="glyphicon glyphicon-remove"></i>
+                                                            </span>
+                                                            <a href="#" data-toggle="modal" data-target="#modal-default">Klasicka</a>
+
+                                                        </button>
+                                                        <button type="button" class="btn btn-labeled btn-default">
+                                                            <span class="btn-label">
+                                                                <i class="glyphicon glyphicon-remove"></i>
+                                                            </span>
+                                                            <a href="#" data-toggle="modal" data-target="#modal-default">Krk</a>
+
+                                                        </button>
+                                                        <button type="button" class="btn btn-labeled btn-default">
+                                                            <span class="btn-label">
+                                                                <i class="glyphicon glyphicon-remove"></i>
+                                                            </span>
+                                                            <a href="#" data-toggle="modal" data-target="#modal-default">Pater</a>
+
+                                                        </button>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <div class="card-header" role="tab" id="headingThree">
+                                                    <h5 class="mb-0">
+                                                        <a data-toggle="collapse" href="#collapseManicure" aria-expanded="true" aria-controls="collapseManicure">
+                                                            Manikura
+                                                        </a>
+                                                    </h5>
+                                                </div>
+
+                                                <div id="collapseManicure" class="collapse show" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
+                                                    <div class="card-body">
+                                                        <button type="button" class="btn btn-labeled btn-default">
+                                                            <span class="btn-label">
+                                                                <i class="glyphicon glyphicon-remove"></i>
+                                                            </span>
+                                                            <a href="#" data-toggle="modal" data-target="#modal-default">Klasicka</a>
+
+                                                        </button>
+                                                        <button type="button" class="btn btn-labeled btn-default">
+                                                            <span class="btn-label">
+                                                                <i class="glyphicon glyphicon-remove"></i>
+                                                            </span>
+                                                            <a href="#" data-toggle="modal" data-target="#modal-default">Panska</a>
+
+                                                        </button>
+                                                        <button type="button" class="btn btn-labeled btn-default">
+                                                            <span class="btn-label">
+                                                                <i class="glyphicon glyphicon-remove"></i>
+                                                            </span>
+                                                            <a href="#" data-toggle="modal" data-target="#modal-default">Gel lak</a>
+
+                                                        </button>
+                                                        <button type="button" class="btn btn-labeled btn-default">
+                                                            <span class="btn-label">
+                                                                <i class="glyphicon glyphicon-remove"></i>
+                                                            </span>
+                                                            <a href="#" data-toggle="modal" data-target="#modal-default">Akryl</a>
+
+                                                        </button>
+                                                        <button type="button" class="btn btn-labeled btn-default">
+                                                            <span class="btn-label">
+                                                                <i class="glyphicon glyphicon-remove"></i>
+                                                            </span>
+                                                            <a href="#" data-toggle="modal" data-target="#modal-default">Sundani</a>
+
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                 </div>
                                 <!-- /.box-body -->
 
@@ -204,7 +360,37 @@
                         </div>
                     </div>
             </section>
+            <div class="modal fade" id="modal-default" style="display: none;">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                            <h4 class="modal-title">Nastavení služby</h4>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="servicePrice">Zakladni cena (Kč)</label>
+                                    <input type="number" class="form-control" id="servicePrice" placeholder="Napr. 100">
+                                </div>
+                                <div class="form-group">
+                                    <label for="serviceDuration">Delka provedeni sluzby (minuty)</label>
+                                    <input type="number" class="form-control" id="serviceDuration" placeholder="Napr. 60" />
 
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Pozdeji</button>
+                            <button type="button" class="btn btn-success">Uložit změny</button>
+                        </div>
+                    </div>
+                    <!-- /.modal-content -->
+                </div>
+                <!-- /.modal-dialog -->
+            </div>
             <!-- /.content -->
             </div>
             <!-- /.content-wrapper -->
